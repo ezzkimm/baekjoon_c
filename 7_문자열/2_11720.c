@@ -1,20 +1,14 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 int main(){
     int n, x, y;
-    int num = 0;
-    char arr[x];
+    int sum = 0;
     scanf("%d", &n);
+    char arr[n];
     scanf("%s", arr);
-    for(int i = x-1; i >= 0; i--){
-        printf("%c", arr[i]);
-        y = atoi(arr[i]);
-        num += y;
-        printf("%d", num);
+    for(int i = 0; i < n; i++){
+        sum += arr[i] - '0';
     }
+    printf("%d", sum);
 
-    
-
-    return 0;
 }
